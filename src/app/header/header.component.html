@@ -8,16 +8,16 @@
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2">Features</a></li>
-        <li><a href="#" class="nav-link px-2">Pricing</a></li>
-        <li><a href="#" class="nav-link px-2">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
+        <li><a routerLink="" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a routerLink="/products" class="nav-link px-2">Products</a></li>
+        <li><a routerLink="/cart" class="nav-link px-2">Cart<img src='../assets/images/cart.svg'></a></li>
+        <li><a routerLink="" class="nav-link px-2">Contact Us</a></li>
+        <li><a routerLink="" class="nav-link px-2">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
+        <button type="button" class="btn btn-outline-primary me-2"><a class="nav-link px-2" routerLink="/login">Login</a></button>
+        <button type="button" class="btn btn-primary"><a class="nav-link px-2" routerLink="/register">Sign-up</a></button>
       </div>
     </header>
   </div>
