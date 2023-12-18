@@ -100,12 +100,17 @@ body {
     z-index: 10;
   }
   
-  /* Declare heights because of positioning of img element */
+  /* Declare heights because of positioning of img element carousel-item-img img-fluid center-block */
   .carousel-item {
     height: 32rem;
   }
   
-  
+  .carousel-img {
+    width: 400px;
+    height: 400px;
+    /* background-image: url('../assets/images/pexels-karolina-grabowska-5632382.jpg'); */
+    background-size: cover;
+}
   /* MARKETING CONTENT
   -------------------------------------------------- */
   

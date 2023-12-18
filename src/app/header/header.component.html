@@ -1,23 +1,54 @@
+<!-- <div class="container"> -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand col-md-4 ms-4 text-primary h1" routerLink=""
+      >Mega Mall<img class="img-fluid border-2" style="max-width: 500px;max-height: 50px;" src="../assets/images/cart-arrow-down_9795299.svg"
+    /></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4 border-bottom"
+      >
+        <ul class="nav col-12 mb-2 justify-content-center mb-md-0">
+          <li>
+            <a routerLink="/products" class="nav-link px-2">Products</a>
+          </li>
 
-<div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-        </a>
+          <li>
+            <a routerLink="/contactus" class="nav-link px-2">Contact Us</a>
+          </li>
+          <li><a routerLink="/aboutus" class="nav-link px-2">About Us</a></li>
+          <li class="d-flex">
+            <a routerLink="/cart" class="nav-link px-2 d-inline"
+              >Cart
+              <!-- <img
+                src="../assets/images/cart.svg"
+                class="d-inline"
+                alt="cart"
+            /> -->
+          </a>
+          </li>
+        </ul>
+      </header>
+      <div class="text-end col-md-7">
+        <button type="button" class="btn btn-outline-primary me-2">
+          <a class="nav-link px-2" routerLink="/login">Login</a>
+        </button>
+        <button type="button" class="btn btn-primary">
+          <a class="nav-link px-2" routerLink="/register">Sign-up</a>
+        </button>
       </div>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a routerLink="" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a routerLink="/products" class="nav-link px-2">Products</a></li>
-        <li><a routerLink="/cart" class="nav-link px-2">Cart<img src='../assets/images/cart.svg'></a></li>
-        <li><a routerLink="/contactus" class="nav-link px-2">Contact Us</a></li>
-        <li><a routerLink="/aboutus" class="nav-link px-2">About Us</a></li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2"><a class="nav-link px-2" routerLink="/login">Login</a></button>
-        <button type="button" class="btn btn-primary"><a class="nav-link px-2" routerLink="/register">Sign-up</a></button>
-      </div>
-    </header>
+    </div>
   </div>
+</nav>
+<!-- </div> -->
