@@ -25,15 +25,18 @@ export class ProductsComponent {
   //End Pipe Lecture
 
   //start services Model Lecture 14
-  pruductArr: Product[];
+  pruductArr: Product[]=[];
   /////////Injection
-  constructor(private productServices:ProductServices, private cartservice:CartService) {
-   
-    this.pruductArr = productServices.getAllProducts();
+  constructor(
+    private productServices: ProductServices,
+    private cartservice: CartService
+  ) {
+    this.productServices.getAllProducts().then((productList: Product[]) => {
+      this.pruductArr = productList;
+    });
+    // this.pruductArr = productServices.getAllProducts();
   }
-  addCartItem(product:Product)
-  {
-    this.cartservice.addToCart(product)
+  addCartItem(product: Product) {
+    this.cartservice.addToCart(product);
   }
-  
 }
