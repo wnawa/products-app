@@ -1,30 +1,22 @@
 import { Component } from '@angular/core';
+import { CartService } from '../services/cart/cart.service';
+import { Cart } from '../shared/models/Cart';
 
 @Component({
   selector: 'app-cart-page',
   standalone: true,
   imports: [],
   templateUrl: './cart-page.component.html',
-  styleUrl: './cart-page.component.css'
+  styleUrl: './cart-page.component.css',
 })
 export class CartPageComponent {
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-// (() => {
-//   'use strict'
-
-//   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//   const forms = document.querySelectorAll('.needs-validation')
-
-//   // Loop over them and prevent submission
-//   Array.from(forms).forEach(form => {
-//     form.addEventListener('submit', event => {
-//       if (!form.checkValidity()) {
-//         event.preventDefault()
-//         event.stopPropagation()
-//       }
-
-//       form.classList.add('was-validated')
-//     }, false)
-//   })
-// })()
+  cart!: Cart;
+  constructor(private cartservice: CartService) {
+    this.setCart();
+  }
+  // cartservice: CartService = new CartService();
+  setCart() {
+    this.cart = this.cartservice.getCart();
+  }
+  // cart= this.cartservice.getCart();
 }

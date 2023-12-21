@@ -1,4 +1,29 @@
-    
+<div class="container">
+  <div class="table-responsive">
+    <h2 class="display-6 text-center mb-4">Shopping Cart</h2>
+    <table class="table text-center">
+      <thead>
+        <tr>
+          <th style="width: 34%">Product Name</th>
+          <th style="width: 22%">Quantity</th>
+          <th style="width: 22%">price</th>
+        </tr>
+      </thead>
+      <tbody>
+       
+        @if(cart.items) {@for(cartItem of cart.items ; track cartItem.id) {
+
+        <tr>
+          <th scope="row">{{ cartItem.product.Name }}</th>
+          <td>{{ cartItem.quantity }}</td>
+          <td>{{ cartItem.price }}</td>
+        </tr>
+        } }
+      </tbody>
+    </table>
+  </div>
+</div>
+<!--     
 <div class="container">
     <main>
  
@@ -209,4 +234,4 @@
     </main>
   
    
-  </div>
+  </div> -->

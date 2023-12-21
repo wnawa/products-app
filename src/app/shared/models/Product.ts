@@ -5,7 +5,7 @@ export class Product {
   detail?: string;
   imgPath?: string;
   color?: string;
-  Price!: string;
+  Price!: number;
 
 //   constructor(id, Name) {
 //     this.id = id;
